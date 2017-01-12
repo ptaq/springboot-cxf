@@ -7,9 +7,6 @@ import com.example.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-
-import javax.annotation.PostConstruct;
-
 /**
  * Created by Grzegorz Śladowski on 2017-01-04.
  */
@@ -61,6 +58,7 @@ public class PersonDaoImpl implements PersonDao {
         }
 
     }
+
 
 
     @Override

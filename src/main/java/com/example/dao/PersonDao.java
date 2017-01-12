@@ -20,10 +20,13 @@ public interface PersonDao {
     public String create(@WebParam(name = "Person") Person person);
 
     @WebMethod(operationName = "uptadePerson")
-    public String update(@WebParam(name = "Person")Person person);
+    public String update(@WebParam(name = "Person") Person person);
 
     @WebMethod(operationName = "deletePerson")
-    public String delete(@WebParam(name = "id")Long id);
+    public String delete(@WebParam(name = "id") Long id);
+
+
+
 
 
 
