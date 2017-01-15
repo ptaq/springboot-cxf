@@ -3,8 +3,7 @@
                   targetNamespace="http://example.com/contractfirst"
                   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
                   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
-                  xmlns:ns1="http://example.com/contractfirst"
-                  xmlns:tns="http://example.com/contractfirst"
+                  xmlns:tns="http://example.com/contractfirst"               
                   xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 
@@ -18,20 +17,20 @@
     </wsdl:types>
 
     <wsdl:message name="sumSalary">
-        <wsdl:part element="ns1:sumSalary" name="parameters"/>
+        <wsdl:part element="tns:sumSalary" name="parameters"/>
     </wsdl:message>
     <wsdl:message name="sumSalaryResponse">
-        <wsdl:part element="ns1:sumSalaryResponse" name="parameters"/>
+        <wsdl:part element="tns:sumSalaryResponse" name="parameters"/>
     </wsdl:message>
 
     <wsdl:portType name="ContractFirst">
         <wsdl:operation name="sumSalary">
-            <wsdl:input message="ns1:sumSalary" name="sumSalary"/>
-            <wsdl:output message="ns1:sumSalaryResponse" name="sumSalaryResponse"/>
+            <wsdl:input message="tns:sumSalary" name="sumSalary"/>
+            <wsdl:output message="tns:sumSalaryResponse" name="sumSalaryResponse"/>
         </wsdl:operation>
     </wsdl:portType>
 
-    <wsdl:binding name="ContractFirst_SoapBinding" type="ns1:ContractFirst">
+    <wsdl:binding name="ContractFirst_SoapBinding" type="tns:ContractFirst">
         <soap:binding style="document"
                       transport="http://schemas.xmlsoap.org/soap/http"/>
 

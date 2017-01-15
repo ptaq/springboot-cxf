@@ -5,16 +5,7 @@
 
     <xs:element name="sumSalary" type="tns:sumSalary"/>
     <xs:element name="sumSalaryResponse" type="tns:sumSalaryResponse"/>
-    <xs:element name="person" type="tns:person"/>
-
-    <xs:complexType name="person">
-        <xs:sequence>
-            <xs:element name="personId" type="xs:long"/>
-            <xs:element minOccurs="0" name="firstName" type="xs:string"/>
-            <xs:element minOccurs="0" name="lastName" type="xs:string"/>
-            <xs:element name="salary" type="xs:double"/>
-        </xs:sequence>
-    </xs:complexType>
+    
     <xs:complexType name="sumSalary">
         <xs:sequence/>
     </xs:complexType>
